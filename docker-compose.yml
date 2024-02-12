@@ -41,8 +41,7 @@ services:
       - PG_EVENTS_HOST=${PG_EVENTS_HOST}
       - PG_EVENTS_DB=${PG_EVENTS_DB}
     command: bash -c 'cd /app && python app.py'
-
 networks:
   default:
-    name: core-infra
-    external: true
+   external:
+     name: core-infra
